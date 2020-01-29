@@ -6,9 +6,9 @@
   </head>
   <body>
     <header>
-      <h1><a href="index.html">ТЕХНОМАРТ</a></h1>
+      <h1><a href="index.html">Техномарт</a></h1>
 
-      <input type="text" name="search" placeholder="Поиск:">
+      <input type="text" id="search-field" name="search" placeholder="Поиск:" >
       <a href="">Закладки: <span>0</span></a>
       <a href="">Корзина: <span>10</span></a>
       <a href="">Оформить заказ</a>
@@ -44,7 +44,7 @@
 
       <ul>
         <li><a href="index.html"></a></li>
-        <li><a href="">Каталог</a></li>
+        <li>Каталог</li>
         <li><a href="">Инструменты</a></li>
         <li><a href="">Перфораторы</a></li>
       </ul>
@@ -53,15 +53,29 @@
         <h2>Перфораторы</h2>
 
         <form name="">
+          <p>Фильтр:</p>
+          <p>Цена</p>
+          <div class="range">
+            <span>0</span>
+            <span>30000</span>
+          </div>
+          <div class="sort">
+            <p>Сортировка</p>
+            <ul>
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По функционалу</li>
+            </ul>
+          </div>
           <p>Производители:</p>
           <ul>
-            <li>BOSCH</li>
-            <li>ИНТЕРСКОЛ</li>
-            <li>MAKIta</li>
+            <li>Bosch</li>
+            <li>Интерскол</li>
+            <li>Makita</li>
             <li>Dewalt</li>
             <li>Hitachi</li>
           </ul>
-          <div>Питание:</div>
+          <p>Питание:</p>
           <ul>
             <li>Аккумуляторные</li>
             <li>Сетевые</li>
@@ -149,6 +163,20 @@
             <p>25500 Р.</p>
           </li>
         </ul>
+        <ul>
+          <li>1</li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">Следующая</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Пара слов о перфораторе</h2>
+        <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </section>
     </main>
 
@@ -161,7 +189,7 @@
         <ul>
           <li><a href="">Компания</a></li>
           <li><a href="">Новости</a></li>
-          <li><a>Каталог</a></li>
+          <li>Каталог</li>
           <li><a href="">Материалы</a></li>
           <li><a href="">Техника</a></li>
           <li><a href="">Интрумент</a></li>
@@ -183,7 +211,7 @@
         <p>
           Разработано -
         </p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
     </footer>
   </body>
 </html>
