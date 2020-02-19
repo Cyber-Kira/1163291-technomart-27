@@ -8,20 +8,28 @@
     <header>
       <h1><a href="index.html">Техномарт</a></h1>
 
-      <input type="text" id="search-field" name="search" placeholder="Поиск:" >
+      <img src="img/icon-search.svg" width="17" height="17" alt="Значок лупы поиска">
+      <input type="text" id="search-field" name="search" placeholder="Поиск:">
+      <img src="img/icon-bookmark.svg" width="14" height="12" alt="Значок закладки">
       <a href="">Закладки: <span>0</span></a>
-      <a href="">Корзина: <span>10</span></a>
+      <img src="img/cart-icon.svg" width="15" height="15" alt="Значок тележки">
+      <a href="">Корзина: <span>0</span></a>
       <a href="">Оформить заказ</a>
       <p>
         Интернет-магазин
         строительных материалов
         и инструментов для ремонта
       </p>
+      <img src="img/icon-phone.svg" width="19" height="19" alt="Значок телефонной трубки">
       <a href="tel:78125550555">+7 (812) 555-05-55</a>
       <address>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </address>
-      <div>Равшан Джамшутович</div>
+      <div>
+        <img src="img/icon-user.png" alt="Значок иконки пользователя">
+        <img src="img/icon-login.svg" alt="Значок выхода из профиля">
+        Равшан Джамшутович
+      </div>
       <ul>
         <li><a href="">Мои заказы</a></li>
         <li><a href="">Личный кабинет</a></li>
@@ -43,7 +51,7 @@
       <h2>Каталог</h2>
 
       <ul>
-        <li><a href="index.html"></a></li>
+        <li><a href="index.html"><img src="img/icon-home.png" alt="Значок дома"></a></li>
         <li><a>Каталог</a></li>
         <li><a href="">Инструменты</a></li>
         <li><a href="">Перфораторы</a></li>
@@ -52,13 +60,13 @@
       <section>
         <h2>Перфораторы</h2>
 
-        <form name="">
+        <form class="filter" name="filter" method="GET" action="https://echo.htmlacademy.ru">
           <p>Фильтр:</p>
-          <p>Цена</p>
-          <div class="range">
+          <fieldset>
+            <legend>Цена</legend>
             <span>0</span>
             <span>30000</span>
-          </div>
+          </fieldset>
           <div class="sort">
             <p>Сортировка</p>
             <ul>
@@ -67,19 +75,44 @@
               <li>По функционалу</li>
             </ul>
           </div>
-          <p>Производители:</p>
-          <ul>
-            <li>Bosch</li>
-            <li>Интерскол</li>
-            <li>Makita</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
-          </ul>
-          <p>Питание:</p>
-          <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые</li>
-          </ul>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interskol" id="filter-interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="power" value="accumulators" id="filter-accumulators" checked>
+                <label for="filter-accumulators">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power" value="electrical" id="filter-electrical">
+                <label for="filter-electrical">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
           <input type="submit" name="sumbit" value="Показать">
         </form>
 
@@ -201,9 +234,9 @@
           Все права защищены
         </p>
         <ul>
-          <li><a href="">Вконтакте</a></li>
-          <li><a href="">Фейсбук</a></li>
-          <li><a href="">Инстаграм</a></li>
+          <li><a href=""><img src="img/vk-icon.png" alt="Значок вконтакте"></a></li>
+          <li><a href=""><img src="img/fb-icon.png" alt="Значок фейсбук"></a></li>
+          <li><a href=""><img src="img/insta-icon.png" alt="Значок инстаграм"></a></li>
         </ul>
         <p>
           Обратная связь:
@@ -214,5 +247,13 @@
         </p>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
     </footer>
+
+    <section class="visually-hidden">
+      <h2 class="visually-hidden">Товар в корзине</h2>
+
+      <form action="https://echo.htmlacademy.ru">
+        
+      </form>
+    </section>
   </body>
 </html>

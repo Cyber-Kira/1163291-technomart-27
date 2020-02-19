@@ -8,8 +8,11 @@
     <header>
       <h1>Техномарт</h1>
 
+      <img src="img/icon-search.svg" width="17" height="17" alt="Значок лупы поиска">
       <input type="text" id="search-field" name="search" placeholder="Поиск:">
+      <img src="img/icon-bookmark.svg" width="14" height="12" alt="Значок закладки">
       <a href="">Закладки: <span>0</span></a>
+      <img src="img/cart-icon.svg" width="15" height="15" alt="Значок тележки">
       <a href="">Корзина: <span>0</span></a>
       <a href="">Оформить заказ</a>
       <p>
@@ -17,11 +20,13 @@
         строительных материалов
         и инструментов для ремонта
       </p>
+      <img src="img/icon-phone.svg" width="19" height="19" alt="Значок телефонной трубки">
       <a href="tel:78125550555">+7 (812) 555-05-55</a>
       <address>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </address>
-      <a href="">>Войти</a>
+      <img src="img/icon-login.svg" width="20" height="17" alt="Значок входа"> 
+      <a href="">Войти</a>
       <a href="">Регистрация</a>
       <nav>
         <ul>
@@ -59,31 +64,31 @@
           <li>
             <p class="new">new</p>
             <p>Материалы</p>
-            <img src="img/icon-1.svg" alt="Иконка материалов">
+            <img src="img/icon-1.svg" alt="Иконка баночки с краской">
             <button type="button">На любой вкус</button>
           </li>
           <li>
             <p class="new">new</p>
             <p>Инструмент</p>
-            <img src="img/icon-2.svg" alt="Иконка инструментов">
+            <img src="img/icon-2.svg" alt="Иконка дрели">
             <button type="button">На все случаи</button>
           </li>
           <li>
             <p class="new">new</p>
             <p>Техника</p>
-            <img src="img/icon-3.svg" alt="Иконка техники">
+            <img src="img/icon-3.svg" alt="Иконка трактора">
             <button type="button">Для стройки</button>
           </li>
           <li>
             <p class="new">new</p>
             <p>Скидки 50%</p>
-            <img src="img/icon-4.svg" alt="Иконка скидки">
+            <img src="img/icon-4.svg" alt="Иконка корзины с покупками">
             <button type="button">На 350 товаров</button>
           </li>
           <li>
             <p class="new">new</p>
             <p>Доставка</p>
-            <img src="img/icon-5.svg" alt="Иконка доставки">
+            <img src="img/icon-5.svg" alt="Иконка грузовика">
             <button type="button">Бесплатно</button>
           </li>
         </ul>
@@ -251,9 +256,9 @@
           Все права защищены
         </p>
         <ul>
-          <li><a href="">Вконтакте</a></li>
-          <li><a href="">Фейсбук</a></li>
-          <li><a href="">Инстаграм</a></li>
+          <li><a href=""><img src="img/vk-icon.png" alt="Значок вконтакте"></a></li>
+          <li><a href=""><img src="img/fb-icon.png" alt="Значок фейсбук"></a></li>
+          <li><a href=""><img src="img/insta-icon.png" alt="Значок инстаграм"></a></li>
         </ul>
         <p>
           Обратная связь:
@@ -264,5 +269,22 @@
         </p>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
     </footer>
+
+    <section class="visually-hidden">
+      <h2 class="visually-hidden">Письмо</h2>
+
+      <form action="https://echo.htmlacademy.ru">
+        <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+        <label for="user-name">Ваше имя:</label>
+
+        <input type="text" name="user-email" id="user-email" placeholder="email@example.com">
+        <label for="user-email">Ваш e-mail:</label>
+
+        <input type="text" name="user-comment" id="user-comment" placeholder="В свободной форме">
+        <label for="user-comment">Текст письма:</label>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
