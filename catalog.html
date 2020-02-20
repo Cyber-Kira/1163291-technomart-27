@@ -3,47 +3,75 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <h1><a href="index.html">Техномарт</a></h1>
-
-      <img src="img/icon-search.svg" width="17" height="17" alt="Значок лупы поиска">
-      <input type="text" id="search-field" name="search" placeholder="Поиск:">
-      <img src="img/icon-bookmark.svg" width="14" height="12" alt="Значок закладки">
-      <a href="">Закладки: <span>0</span></a>
-      <img src="img/cart-icon.svg" width="15" height="15" alt="Значок тележки">
-      <a href="">Корзина: <span>0</span></a>
-      <a href="">Оформить заказ</a>
-      <p>
-        Интернет-магазин
-        строительных материалов
-        и инструментов для ремонта
-      </p>
-      <img src="img/icon-phone.svg" width="19" height="19" alt="Значок телефонной трубки">
-      <a href="tel:78125550555">+7 (812) 555-05-55</a>
-      <address>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-      <div>
-        <img src="img/icon-user.png" alt="Значок иконки пользователя">
-        <img src="img/icon-login.svg" alt="Значок выхода из профиля">
-        Равшан Джамшутович
-      </div>
-      <ul>
-        <li><a href="">Мои заказы</a></li>
-        <li><a href="">Личный кабинет</a></li>
-      </ul>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="">Компания</a></li>
-          <li><a>Каталог</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Спецпредложения</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="header-top">
+          <h1 class="main-header-logo"><img src="img/tehnomart.svg" alt="Логотип">Техномарт</h1>
+          <div class="site-search">
+            <img src="img/icon-search.svg" width="17" height="17" alt="Значок лупы поиска">
+            <label for="search-field">Поиск:</label>
+            <input type="text" id="search-field" name="search" placeholder="Поиск:">
+          </div>
+          <div class="header-order-menu">
+            <div class="order-menu-bookmarks">
+              <img src="img/icon-bookmark.png" width="14" height="12" alt="Значок закладки">
+              <a href="">Закладки: <span>0</span></a>
+            </div>
+            <div class="order-menu-cart">
+              <img src="img/cart-icon.png" width="15" height="15" alt="Значок тележки">
+              <a href="">Корзина: <span>0</span></a>
+            </div>
+            <div class="order-menu-make">
+              <a href="">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+        <p class="site-description">
+          Интернет-магазин
+          строительных материалов
+          и инструментов для ремонта
+        </p>
+        <div class="header-contacts">
+          <div class="site-phone">
+            <img src="img/icon-phone.svg" width="19" height="19" alt="Значок телефонной трубки">
+            <a href="tel:78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <address>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </address>
+        </div>
+        <div class="user-nav visually-hidden">
+          <div class="user-login">
+            <img src="img/icon-login.svg" width="20" height="17" alt="Значок входа"> 
+            <a href="">Войти</a>
+          </div>
+          <div class="user-registration">
+            <a href="">Регистрация</a>
+          </div>
+        </div>
+        <div class="user-info">
+          <img src="img/icon-user.png" alt="Значок иконки пользователя">
+          <img src="img/icon-login.svg" alt="Значок выхода из профиля">
+          Равшан Джамшутович
+          <ul class="user-info-nav">
+            <li><a href="">Мои заказы</a></li>
+            <li><a href="">Личный кабинет</a></li>
+          </ul>
+        </div>
+          <ul class="header-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Спецпредложения</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -205,7 +233,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="about">
         <h2>Пара слов о перфораторе</h2>
         <p>
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
